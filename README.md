@@ -14,7 +14,7 @@ and Integrated with [React](https://reactjs.org/)
 
 ## Credits
 
-Made by *acquitelol*(`acquite#0001`)<br>
+Made by **acquitelol**(`acquite#0001`)<br>
 Created with the intention to learn [Astro](https://astro.build), for [PlayCover](https://discord.gg/playcover)
 
 
