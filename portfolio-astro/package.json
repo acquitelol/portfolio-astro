@@ -1,5 +1,5 @@
 {
-  "name": "@example/portfolio",
+  "name": "@example/basics",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,14 +7,13 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "addreact": "astro add react"
   },
   "devDependencies": {
-    "@astrojs/preact": "^1.0.2",
+    "@astrojs/react": "^1.0.0",
     "astro": "^1.0.6",
-    "sass": "^1.52.2"
-  },
-  "dependencies": {
-    "preact": "^10.7.3"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
