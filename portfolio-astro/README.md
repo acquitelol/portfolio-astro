@@ -6,6 +6,7 @@ and Integrated with [React](https://reactjs.org/)
 ## Want to contribute? Here's how:
 
 **\`[->/1:** Fork the Repository
+
 **\`[->/2:** Create your Feature Branch (`git checkout -b feature/MagicalFeature`)
 **\`[->/3:** Add your changes to the uncommited Branch.
 **\`[->/4:** Commit your changes within the branch. Example: `git commit -m 'Added some magical feature'`
