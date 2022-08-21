@@ -30,6 +30,19 @@ main {
     text-align: center;
 }
 
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.projectsBtn {
+    outline: none;
+    border-radius: 0.5em;
+    border-style: solid;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
 .text-gradient {
     font-weight: 900;
     background-image: var(--astro-gradient);

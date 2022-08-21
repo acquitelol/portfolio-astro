@@ -17,11 +17,13 @@ import Footer from '../components/footer/footer.tsx'
         <!-- CONTENT -->
         <div class='sub'>This is a Subheading.</div>
         <div class='content'>This is considered the content of the article/whatever youre doing. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia aliquam velit vitae praesentium fugiat iste perspiciatis assumenda laudantium at nihil eligendi sapiente incidunt, vero tempora quaerat! Facere eos accusamus, nisi nesciunt fuga libero officia at voluptatum, deleniti, atque unde quaerat.</div>
-        <a href={navBarItems[1].url}>
-            <button type="button">
-                Learn More!
-            </button>
-        </a>
+        <div class='btnContainer'>
+            <a href={navBarItems[1].url}>
+                <button type="button" class='projectsBtn'>
+                    Learn More!
+                </button>
+            </a>
+        </div>
 
         <!-- FOOTER -->
         <Footer client:idle />
