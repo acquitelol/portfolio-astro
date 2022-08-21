@@ -1,18 +1,18 @@
 ---
 	
 import Layout from '../layouts/Layout.astro';
-import './index.css';
+import './projects.css';
 import Navbar from '../components/navbar/navbar.tsx'
 import navBarItems from '../scripts/navbar';
 
 import Footer from '../components/footer/footer.tsx'
 ---
 
-<Layout title="Acquite's Test Portfolio">
+<Layout title="Projects">
 	<main>
 		<Navbar navbarArray={navBarItems} client:load />
         <!-- TITLE -->
-        <div class='title'>This is the <span class='text-gradient'>Home Page</span></div>
+        <div class='title'>This is the <span class='text-gradient'>Projects Page</span></div>
 
         <!-- CONTENT -->
         <div class='sub'>This is a Subheading.</div>

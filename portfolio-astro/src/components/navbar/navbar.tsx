@@ -1,25 +1,13 @@
 import React from 'react'
 import './navbar.css'
 
-interface navbarItem {
-    name: string,
-    url: string
+interface containerProps {
+    navbarArray: [];
 }
 
-const navBarItems: navbarItem[] = [
-    {
-        "name": "home",
-        "url": "/",
-    },
-    {
-        "name": "projects",
-        "url": "/projects",
-    }
-]
-
-const Navbar: React.FC = () => {
+const Navbar: React.FC<containerProps> = ({navbarArray}) => {
     return (
-        navBarItems.map((navBarItem, index) => {
+        navbarArray.map((navBarItem, index) => {
             return (
                 <div index={index} className="inline">
                     <a href={navBarItem.url}>{navBarItem.name}</a>
