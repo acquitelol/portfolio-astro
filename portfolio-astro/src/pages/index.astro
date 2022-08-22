@@ -3,18 +3,23 @@
 import Layout from '../layouts/Layout.astro';
 import './index.css';
 import Navbar from '../components/navbar/navbar.tsx'
-import navBarItems from '../scripts/navbar';
+import navBarItems from '../scripts/navbarItems.ts';
+import navbarIcons from '../scripts/navbarIcons.ts';
 
 import Footer from '../components/footer/footer.tsx'
 ---
 
 <Layout title="Acquite's Test Portfolio">
 	<main>
-		<Navbar navbarArray={navBarItems} client:load />
+		<Navbar navbarArray={navBarItems} navbarIcons={navbarIcons} client:load />
         <!-- TITLE -->
-        <div class='title'>This is the <span class='text-gradient'>Home Page</span></div>
+        <div class='titleContainer'>
+            <img src='./bg.png' class="bgAnim">
+            <div class='title'><span class='text-gradient'>Front-End</span> Developer</div>
+        </div>
+        
 
-        <!-- CONTENT -->
+        <!-- CONTENT
         <div class='sub'>This is a Subheading.</div>
         <div class='content'>This is considered the content of the article/whatever youre doing. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia aliquam velit vitae praesentium fugiat iste perspiciatis assumenda laudantium at nihil eligendi sapiente incidunt, vero tempora quaerat! Facere eos accusamus, nisi nesciunt fuga libero officia at voluptatum, deleniti, atque unde quaerat.</div>
         <div class='btnContainer'>
@@ -23,7 +28,7 @@ import Footer from '../components/footer/footer.tsx'
                     Learn More
                 </button>
             </a>
-        </div>
+        </div> -->
 
         <!-- FOOTER -->
         <Footer client:idle />

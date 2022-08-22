@@ -3,30 +3,34 @@ import './navbar.css'
 
 interface containerProps {
     navbarArray: [];
+    navbarIcons: [];
 }
 
-const Navbar: React.FC<containerProps> = ({navbarArray}) => {
+const Navbar: React.FC<containerProps> = ({navbarArray, navbarIcons}) => {
     return (
-        navbarArray.map((navBarItem, index: number) => {
-            const getName = (string: string) => {
-                let name = string
-                let formatted = name.slice(0).replaceAll('%20', ' ')
-              
-                if (formatted==='') return "Invalid"
-              
-                let one = formatted.split('', 1)
-                let two = [one[0], formatted.slice(1)]
-                one[0] = one[0].toUpperCase();
-                let final = one[0]+two[1]
-              
-                return final
-            }
-            return (
-                <div index={index} className="inline">
-                    <a href={navBarItem.url}>{getName(navBarItem.name)}</a>
-                </div>
-            )
-        })
+        <div className='navbarContainer'>        
+            {navbarArray.map((navBarItem, index: number) => {
+                const getName = (str: string) => {
+                    return str.charAt(0).toUpperCase() + str.slice(1)
+                }
+                return (
+                    <div index={index} className="inline">
+                        <a href={navBarItem.url} className='itemContent'>
+                            {getName(navBarItem.name)}
+                        </a>
+                    </div>
+                )
+            })}
+
+            {navbarIcons.map((navBarItem, index: number) => {
+                return (
+                    <a href={navBarItem.url} target='blank' index={index} className={index===0?'icons iconContent':"iconContent"}>
+                        <img src={navBarItem.image} alt={navBarItem.name} width='30' />
+                    </a>
+                )
+            })}
+        </div>
+
     );
 };
   

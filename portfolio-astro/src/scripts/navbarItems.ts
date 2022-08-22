@@ -11,7 +11,7 @@ const navBarItems: navbarItem[] = [
     {
         name: "projects",
         url: "/projects",
-    }
+    },
 ]
 
 export default navBarItems;
